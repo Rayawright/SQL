@@ -1,0 +1,19 @@
+CREATE TABLE plant_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, sold INTEGER);
+INSERT INTO plant_store VALUES (1, "Golden Pathos", 16.99, 5, 2);
+INSERT INTO plant_store VALUES (2, "Aloe Vera", 12.99, 3, 1);
+INSERT INTO plant_store VALUES (3, "Swiss Cheese Plant", 20.98, 10, 3);
+INSERT INTO plant_store VALUES (4, "Spider Plants", 32.99, 5, 2);
+INSERT INTO plant_store VALUES (5, "Peace Lily",32.96, 1, 0);
+INSERT INTO plant_store VALUES (6, "ZZ Plant", 10.99, 10, 4);
+INSERT INTO plant_store VALUES (7, "Ponytail Palm", 30.00, 2, 1);
+INSERT INTO plant_store VALUES (8, "Snake Plant", 15.00, 6, 3);
+INSERT INTO plant_store VALUES (9, "Birds Nest Fern", 5.99, 6, 0);
+INSERT INTO plant_store VALUES (10, "Rhaphidophora", 26.98, 5, 2);
+SELECT * FROM plant_store ORDER BY (price);
+SELECT SUM(sold) FROM plant_store;
+SELECT SUM(price) FROM plant_store;
+
+
+
+
+
