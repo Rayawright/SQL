@@ -817,3 +817,4 @@ SELECT name from pokemon where attack>100;
 SELECT name from pokemon where attack>100 group by defense=120;
 SELECT AVG(attack) from pokemon;
 SELECT name, CASE WHEN attack > 79 THEN "above avg" ELSE "below avg" END "rank" FROM pokemon;
+Select * FROM pokemon WHERE attack > 79 AND defense < 79;
